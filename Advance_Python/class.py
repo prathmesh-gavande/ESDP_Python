@@ -1,38 +1,32 @@
-class Timeclass:
+class student:
+    def __init__(self,name,age,percentage):
+        self.name=name
+        self.age=age
+        self.percentage=percentage
 
-    def __init__(self,hr,min):
-        self.hr=hr
-        self.min=min
+    def showinfo(self):
+        print("Name : ",self.name)
+        print("Age : ",self.age)
+        print("Percentage : ",self.percentage)
 
-     
-    def Time(self):
-        print("Hour : " ,self.hr)
-        print("Minute : ",self.min)
+name=input("Enter the name : ")
+age=input("Enter the ege : ")
+percentage=float(input("Enter the percentages : "))
+s=student(name,age,percentage)
+s.showinfo()
+class student:
+    def __init__(self,name,age,percentage):
+        self.name=name
+        self.age=age
+        self.percentage=percentage
 
-class Dateclass:
-    def Date(self):
-        print("Today's date")
-    
-class Studenclass:
-    def Student(self):
-        print("I am a student")
+    def showinfo(self):
+        print("Name : ",self.name)
+        print("Age : ",self.age)
+        print("Percentage : ",self.percentage)
 
-class Fanclass:
-    def Fan(self):
-        print("I am rotate")
-
-class Pointclass:
-    def Point (self):
-        print("Point function")
-
-class Boxclass:
-    def Box (self):
-        print("Box function")
-
-time1=Timeclass(10,35)
-time1.Time()
-
-print("-"*30)
-date1=Dateclass()
-date1.Date()
-
+name=input("Enter the name : ")
+age=input("Enter the ege : ")
+percentage=float(input("Enter the percentages : "))
+s=student(name,age,percentage)
+s.showinfo()
